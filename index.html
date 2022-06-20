@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élaborer une sratégie de test</title>
+</head>
+<body>
+   <h2>Mise en place d'une organisation QA</h2> 
+   
+    <p>Cette organisation se fait/ se réfléchit/ s'écrit en équipe.
+<br/>
+<br/>
+        Les 3 documents nécessaires à la documentation des tests :
+
+        <ol>
+            <li>La politique de tests  
+                <br>
+                <p> Document qui est créé au niveau d'un groupe ou d'une entreprise et qui va décrire comment vont se passer les activités de tests dans cette entreprise. </p> 
+            
+                <dl>
+                    <dt>- Fait-on appelle a une société exterieure ? </dt>
+                    <dd>- Les tests doivent être faits dans la même équipe que les developpeurs ou est-ce une équipe à part ?</dd>
+                  </dl>
+                  <br/>
+
+                  " Document de haut niveau décrivant les principes, approches et objectifs majeurs de l'organisation concernant l'activité de test" 
+            </li>
+<br/>
+            <li>Stratégie de tests</li>
+            <br/>
+            Document qui est écrit pour le projet et qui englobe l'ensemble des squads du projet. Permet de cadrer les tests et de communiquer à l'équipe sur la valeur que nous apportons au niveau des tests sur le projet, ce que nous produisons ou pas et pourquoi nous ne le produisons pas afin que les autres acteurs ne pensent pas que nous n'y avons pas pensé mais que ce n'était pas adapté au projet. 
+
+            <dl>
+                <dt>- Comment vont se passer les tests ?  </dt>
+                <dd>- Quels niveau de tests vas t'on réaliser ? ( unitaire, acceptation...)</dd>
+              </dl>
+              <br/>
+              "Document de haut niveau définissant, pour un programme, les niveaux de tests à exécuter et les tests dans chacun de ces niveaux (pour un ou plusieurs projets)"
+
+              <br/>
+            <li>Plan de tests maître</li>
+          </ol>
+Ce document est le seul à être propre à une squad.
+
+<dl>
+    <dt>- Pour ce programme, pour ce projet, pour cette équipe, comment on va faire les tests ?  </dt>
+  </dl>
+  <br/>
+  "Document décrivant l'étendue, l'approche, les ressources et le planning des activités de test prévues"
+    </p>
+
+
+
+<h2>Comment s'organise la mise en place d'une stratégie de test dans une équipe agile ? </h2>
+<br>
+<ol>
+    <li>Qui fait quoi ?
+         <br> 
+         <p> Le testeur agile est la personne référente de ce processus. Il doit réfléchir à comment mettre en place la stratégie et test, la monter et communiquer aux développeurs, à l'automaticien de tests et au product owner la qualité que nous allons mettre sur le projet.</p> </li>
+    <li>Quels sont nos outils ? 
+        <br> 
+        <p> La mise en place de la théorie ISTQB des quadrans --> 
+            <br> 
+            <ul>
+                <li>Quadran 1 : Tests unitaires / tests de composants --> Test du code du developpeur par les devs. </li>
+                <li>Quadran 2 : Tests fonctionnels / Tests de story --> Réalisé par le testeur agile et parfois aidé du PO</li>
+                <li>Quadran 3 : Tests exploratoires / Tests utilisateurs : Réalisé par le testeurs agile, le PO et si on en a des utilisateurs. Tout le monde peut faire du tests explorateurs. Le mieux : Si toute l'équipe en fait car ça permet une implication de toute l'équipe au niveau de la qualité. </li>
+                <li>Quadran 4 : Tests de charge / Tests de performande / Tests de sécurité : Les tests non fonctionnel. Il faut indiquer dans la stratégie de test si on en fait. Si nous décidons de ne pas en faire il faut également l'indiquer et indiquer pourquoi nous ne faisaons pas ce type de tests. </li>
+              </ul>  
+        </p>  </li>
+  </ol>
+  
+  <br> 
+
+<h2>Ou la stratégie de test se mets une fois qu'elle a été créée ? </h2>
+<br>
+<p>
+    <dl>
+        <dt>Les endroits sont possible : </dt>
+        <dd>- Document bureautique --> word, excel, powerpoint... </dd>
+        <dd>- Wiki --> Confluence, Gitlab... --> Se met à jour facilement, gère le versionning, tout le monde y a accès, si le projet est déjà sur un environnement Jira/Confluence alors les US, les bugs et la stratégie de test sont au même endroit. </dd>
+        <dd>- Document bureautique --> word, excel, powerpoint... </dd>
+        <dd>- outils de gestion de projet --> Jira... (ex : créer un ticket Jira et y mettre sa stratégie de test) --> Pas très pratique car le ticket peut se perdre dans le flow de ticket </dd>
+        <dd>- Notion --> Si l'équipe utilise Notion il peut s'agire d'une bonne option </dd>
+    </dl>
+
+<br>
+<HR ALIGN=CENTER WIDTH="100">
+
+    <h2>Comment se lancer dans la mise en place de sa stratégie ? </h2>
+    <br>
+    Si la stratégie de test est bien faite cela permet aux testeurs d'aller vers des modes un peu plus sympa en tant qu'équipe de QA que sur un classique "ALM - Execution de tests - Bugs - Ticket - Correction..."
+   <br>
+    L'objectif du document est de communiquer sur la qualité apportée à l'application dans l'équipe mais aussi à l'exterieur de l'équipe. 
+    <br>
+    La team QA s'engage à apporter le niveau de qualité indiqué dans le document. C'est aussi pour cette raison que l'équipe réalise ce document. 
+    <br>
+    <h4>Comment écrire ce document :  </h4>
+    <br>
+
+    <ol>
+        <li>Introduction 
+            <br> 
+            <p> - Objectifs du document
+                <br>
+            - Périmètre des tests --> Les tests sont faits à partir des US, des specs... 
+            <br> 
+            - Indiquer les documents de référence (spécification techniques, fonctionnelles, analyse...) </p> </li>
+        <li>Contexte
+            <p>- Présenter brièvement le projet (En 2 paragraphes indiquer le type de projet et son but) </p>
+        </li>
+        <li>Processus de test 
+            <p>- Contraintes et risques liés au projet 
+                <br>
+                <br>
+                - Ressources Humaines --> Décrire l'équipe et ces compétences  
+                <br>
+                <br>
+                - Temporelles --> Indiquer le procédé (Si c'est des sprints, indiquer si il s'agit de sprint 2 semaines, 1 mois....) pour pouvoir adapter la stratégie de test en fonction du délai disponible. Comme nous ne pouvons pas faire une stratégie de test à chaque sprint il faut faire une stratégie de test pour la totalité du projet OU pour la release (au choix)
+                <br>
+                <br>
+                - Organisationnelles --> Qui va faire des tests ? Le testeur agile, le po ? 
+               <br>
+               <br>
+                - Est ce qu'on tient un référentiel de test ? 
+               <br>
+               <br>
+                - Est ce qu'on a unALM (Application Lifecycle Management) --> OUI, Jira 
+               <br>
+               <br>
+                - Est ce qu'on fait des campagnes d'execution ? Si oui, manuelles ou automatiques ? Ces campagnes sont elles loggées quelque part + leurs résultats (passed, failed...) ? 
+               <br>
+               <br>
+                - Comment on suit nos anomalies ? Comment les anomalies sont-elles remontées aux développeurs ? Comment elles sont suivis ? Comment on sait qu'elles sont corrigées ? Livrées ? Dans quels outils c'est mis ? 
+                <br>
+                <br>
+                - Typologies de tests --> d'après la pyramide de tests, fait on tous les tests ? Comme il s'agit aussi de documenter notre projet il est préconisé de mettre toutes les données liées au test et type de test et pour chaque test indiquer si oui ou non et dans quels conditions ils sont réalisés 
+               <br>
+               <br>
+                - Les environnements de tests utilisés 
+               <br>
+               <br>
+                - Si tests auto, vont ils passés sur tous les environnements, dans les pipelines, ou on passe que certains niveau de tests sur certains environnements. Est ce qu'on fait que du shift left ou du shift right ? (https://latavernedutesteur.fr/2017/11/03/le-shift-left/) 
+               <br>
+               <br>
+                - Reporting des tests --> Soit on en fait soit on en fait pas ; indique combien de tests sont fait et combien d'anomalies sont trouvées. Les tests autos peuvent remonter des rapports automatiquement. 
+        
+            </p>
+        </li>
+
+        <li>"Les nouvelles armes du testeur" 
+            <br> 
+            <p> il y a 3 nouvelles méthodes qui font actuellement leurs preuves dans le QA 
+                <br>
+                <br>
+                - Le No Test Case --> Le fait de ne pas avoir forcement d'ALM pour maintenir le référentiel de test. Cela ne veut pas dire qu'on ne conçoit pas de test ou qu'on en rédige pas --> Sur un projet automatisé les cas sont déjà rédigés pour l'automatisation et donc ce n'est pas forcément nécessaire
+                <br>
+                <br>
+                - Full Exploratory Testing --> Comme les cas de test sont de plus en plus automatisés le testeur agile a le temps de faire du test exploratoire sans toujours répéter les mêmes cas de tests. Dans ce cas, le testeur agile fait du test exploratoire en permanence. De la même manière, que le testeur en fasse peu, beaucoup ou pas du tout il faut l'indiquer dans la stratégie de test. Il faut indiquer si oui ou non c'est pratiqué pour documenter le projet.
+            <br> 
+            <br>
+            - Pair testing --> Les developpeurs font du pair programming ; les testeurs du pair testing. Permet d'améliorer la qualité de nos projets. Que ce soit des duo testeur / dev ; test / PO ; testeur / testeur ; testeur / automaticien... 1 qui regarde le code et un qui fait des tests a l'IHM par exemple. Si c'est avec le developpeur et qu'il arrive a debugguer en même temps qu'on test on gagne du temps sur nos bugs (pas de tickets d'ano, pas compliqué pour le dev de comprendre le ticket, pas galéré à trouver ou c'est dans l'app...)
+            <br>
+            <br>
+            Si on décide d'utiliser l'un de ces 3 outils alors il faut l'indiquer + a quel point ce sera utilisé dans la stratégie
+            <br>
+            <br>
+        </p> </li>
+
+      </ol>
+</p>
+</body>
+</html>
